@@ -22,13 +22,13 @@ if 'name' not in st.session_state:
 
 
 if not st.session_state.name:
-    st.session_state.name = st.text_input("Hello! What is your name?")
+   st.session_state.name = st.text_input("你好! 叫什麼名字?")
 
 if st.session_state.name and (not st.session_state.passed1):
     with st.form("form1"):
         st.session_state.number_of_guesses = st.number_input(
-            f'{st.session_state.name.capitalize()} how lucky do you think you\
-                 are? How many guesses do you want?',
+            f'{st.session_state.name.capitalize()} 你覺得自己有多幸運\
+                 are? 你想猜多少呢?',
             min_value=1,
             max_value=10,
             value=5
