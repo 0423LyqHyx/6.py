@@ -44,7 +44,7 @@ if st.session_state.name and (not st.session_state.passed1):
             min_value=2,
             max_value=100
         )
-        submitted1 = st.form_submit_button("確認")
+        submitted1 = st.form_submit_button("自我挑戰")
 
     # need to validate user inputs
     if submitted1:
@@ -69,7 +69,7 @@ if st.session_state.passed1 and (not st.session_state.end):
             min_value=1,
             max_value=100
         )
-        submitted2 = st.form_submit_button("確認")
+        submitted2 = st.form_submit_button("贏了這學期數學過關啦")
 
     if submitted2:
         st.session_state.number_of_guesses -= 1
