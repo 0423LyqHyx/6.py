@@ -73,7 +73,7 @@ if st.session_state.passed1 and (not st.session_state.end):
 
     if submitted2:
         st.session_state.number_of_guesses -= 1
-        st.info(f" {st.session_state.number_of_guesses} 機會")
+        st.info(f" {st.session_state.number_of_guesses} 還有")
         if guess < st.session_state.number_from \
                 or guess > st.session_state.number_to:
             st.warning("超出範圍, FOOL!")
@@ -82,7 +82,7 @@ if st.session_state.passed1 and (not st.session_state.end):
         elif guess > st.session_state.number:
             st.warning("比密碼大!")
         else:
-            st.success("!")
+            st.success("你贏了")
             st.session_state.end = True
 
         if st.session_state.number_of_guesses == 0:
