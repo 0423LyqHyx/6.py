@@ -94,9 +94,3 @@ if st.session_state.end:
     '''
     # Thanks for playing!
     ## Refresh the page if you wish to play again!
-def 在玩一次():
-    # 若玩家想在玩一次就回傳true，若否就回傳false
-    st.write('你想要在挑戰一次嗎? (yes 或 no)')
-    return input().lower().startswith('y')#轉乘小寫，若是y就開始，只要不是y就結束遊戲
-    if not 在玩一次():
-        break
