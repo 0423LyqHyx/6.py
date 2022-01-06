@@ -94,3 +94,5 @@ if st.session_state.end:
     '''
     # Thanks for playing!
     ## Refresh the page if you wish to play again!
+    '''
+    
