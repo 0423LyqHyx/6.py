@@ -41,7 +41,7 @@ if st.session_state.name and (not st.session_state.passed1):
         st.session_state.number_to = st.number_input(
             '範圍選擇最大的數字，您希望它是什麼\
                  是？',
-            min_value=2,
+            min_value=100,
             max_value=100
         )
         submitted1 = st.form_submit_button("自我挑戰")
