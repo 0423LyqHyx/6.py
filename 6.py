@@ -92,7 +92,7 @@ if st.session_state.passed1 and (not st.session_state.end):
 
 if st.session_state.end:
     '''
-    # Thanks for playing!
-    ## Refresh the page if you wish to play again!
+    # 謝謝來玩 請再次光臨!
+    ## 如果想再玩一次 請按F5!
     '''
     
